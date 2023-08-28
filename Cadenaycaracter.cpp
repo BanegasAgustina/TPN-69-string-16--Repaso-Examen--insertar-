@@ -17,26 +17,18 @@ int main()
     cout<<CambiarEspacios(cadena ,espaciosenblanco);
     return 0;
 }
-string CambiarEspacios(string cad , string eeb){
-    string n;
-   string aux;
-   int i;
-
-	for(i=0; i< cad.size();i++)
+string DividirPalabra(string f,string l){
+		int i;	
+ 
+   for(i=0; i< f.size();i++)
 	{
-		if(cad[i] == eeb[0]  )
+		if(f[i] == ' ' )
 		{
-			n+=eeb+aux+eeb;
-			aux=eeb;
+			f[i]=l[0];
 			
 		}
-		else{
-			aux+=cad[i];
-		
+	
 	}
-			
-	}
-	n+=eeb+aux+eeb;
-			aux=" ";
-return n;	
+
+return f;	
 }
