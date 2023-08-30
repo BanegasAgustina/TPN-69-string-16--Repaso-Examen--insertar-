@@ -17,7 +17,7 @@ int main()
     cout<<CambiarEspacios(cadena ,espaciosenblanco);
     return 0;
 }
-string DividirPalabra(string f,string l){
+string CambiarEspacios(string f,string l){
 		int i;	
  
    for(i=0; i< f.size();i++)
